@@ -1,3 +1,4 @@
+/* main header styling  */
 .header {
   display: flex;
   background-color: #060606;
@@ -23,15 +24,18 @@
   color: #000;
 }
 
+/* main editor box styling */
 .CodeMirror {
   height: 350px !important;
   color: #fff;
 }
 
+/* side line of editor styling  */
 .CodeMirror-gutters {
   background: #1d1e22 !important;
 }
 
+/* editor scroll styling */
 .CodeMirror-scroll {
   background: #1d1e22 !important;
 }
