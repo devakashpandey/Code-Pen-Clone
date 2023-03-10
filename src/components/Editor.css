@@ -1,15 +1,37 @@
+.header {
+  display: flex;
+  background-color: #060606;
+  color: #aaaebc;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.heading {
+  background: #1d1e22;
+  display: flex;
+  padding: 10px 12px;
+}
+
 .html {
-  background-color: red;
+  background-color: #c42b2b;
   display: flex;
   height: 18px;
   width: 20px;
   justify-content: center;
   border-radius: 5px;
   padding-bottom: 3px;
+  color: #000;
 }
 
-.heading {
-  background: #1d1e22;
-  display: flex;
-  padding: 8px 10px;
+.CodeMirror {
+  height: 350px !important;
+  color: #fff;
+}
+
+.CodeMirror-gutters {
+  background: #1d1e22 !important;
+}
+
+.CodeMirror-scroll {
+  background: #1d1e22 !important;
 }

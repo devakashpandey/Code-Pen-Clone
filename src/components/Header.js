@@ -12,7 +12,7 @@ const Header = () => {
             src={logo}
             alt=""
             width="35px"
-            style={{ color: "white", cursor: "pointer" }}
+            style={{ color: "white", cursor: "pointer", marginLeft: -10 }}
           />
         </Toolbar>
       </AppBar>
