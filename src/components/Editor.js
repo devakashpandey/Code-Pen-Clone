@@ -39,8 +39,7 @@ const Editor = ({ name, symbol, color, value, onChange }) => {
             />
           </div>
         </div>
-        {/* code editor start */}
-
+        // code editor start
         <ControlledEditor
           className="controlled-editor" // default class for extra classname
           value={value}
@@ -50,8 +49,7 @@ const Editor = ({ name, symbol, color, value, onChange }) => {
             lineNumbers: "true", // for showing the numbers
           }}
         />
-
-        {/* code editor end */}
+        // code editor end
       </Box>
     </>
   );
