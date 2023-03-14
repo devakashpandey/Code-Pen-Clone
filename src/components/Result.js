@@ -1,8 +1,10 @@
-import React from "react";
-import { Box } from "@mui/material";
+import React, { useEffect, useState } from "react";
+import "./Result.css";
 import { UseDataValue } from "../context/DataProvider";
 
 const Result = () => {
+  const [src, setSrc] = useState(""); // this is for set time out
+
   const { html, css, js } = UseDataValue();
 
   const srcCode = `
@@ -13,17 +15,25 @@ const Result = () => {
        </html>
     `;
 
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setSrc(srcCode);
+    }, 1000);
+
+    return () => clearTimeout(timeout);
+  }, [html, css, js]);
+
   return (
-    <Box className="result">
+    <div className="result-box">
       <iframe
-        srcDoc={srcCode}
+        srcDoc={src}
         title="output"
         sandbox="allow-scripts"
-        height="240vh"
-        width="99%"
+        height="100%"
+        width="99.7%"
         frameBorder={0}
       />
-    </Box>
+    </div>
   );
 };
 
