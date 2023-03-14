@@ -2,11 +2,16 @@ import React from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import logo from ".././asset/codepen.png";
+import "./Header.css";
+import ModeEditIcon from "@mui/icons-material/ModeEdit";
 
 const Header = () => {
   return (
     <>
-      <AppBar style={{ backgroundColor: "black" }} position="static">
+      <AppBar
+        style={{ backgroundColor: "black", height: 70 }}
+        position="static"
+      >
         <Toolbar>
           <img
             src={logo}
@@ -14,6 +19,8 @@ const Header = () => {
             width="35px"
             style={{ color: "white", cursor: "pointer", marginLeft: -10 }}
           />
+          <h3 className="logo-title">Untitled</h3>
+          <ModeEditIcon className="edit" />
         </Toolbar>
       </AppBar>
     </>

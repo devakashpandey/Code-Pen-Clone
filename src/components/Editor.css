@@ -15,11 +15,10 @@
   padding: 10px 12px;
 }
 
-.html {
-  background-color: #c42b2b;
+.language {
   display: flex;
-  height: 18px;
-  width: 20px;
+  height: 19px;
+  width: 22px;
   justify-content: center;
   border-radius: 5px;
   padding-bottom: 3px;
@@ -40,4 +39,32 @@
 /* editor scroll styling */
 .CodeMirror-scroll {
   background: #1d1e22 !important;
+}
+
+.container {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px 10px;
+}
+
+.editor-icon {
+  background: "white";
+  cursor: pointer;
+  background: #1d1e22;
+  padding: 4px 8px;
+  border-radius: 3px;
+  margin: 5px;
+  font-size: 18px !important;
+}
+
+.editor-icon:hover {
+  background: #1d1e30;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0;
+  }
 }

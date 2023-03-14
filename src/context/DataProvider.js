@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
 const DataContext = createContext();
 
@@ -24,3 +24,4 @@ const DataProvider = ({ children }) => {
 };
 
 export default DataProvider;
+export const UseDataValue = () => useContext(DataContext);
