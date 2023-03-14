@@ -4,9 +4,9 @@ import Editor from "./Editor";
 const Code = () => {
   return (
     <>
-      <Editor />
-      <Editor />
-      <Editor />
+      <Editor heading="HTML" />
+      <Editor heading="CSS" />
+      <Editor heading="JS" />
     </>
   );
 };

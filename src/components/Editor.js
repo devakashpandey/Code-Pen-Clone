@@ -10,13 +10,13 @@ import "codemirror/mode/xml/xml";
 import "codemirror/mode/javascript/javascript";
 import "codemirror/mode/css/css";
 
-const Editor = () => {
+const Editor = ({ heading }) => {
   return (
     <>
       <Box>
         <div className="header">
           <header className="heading">
-            <span className="html">/</span>&nbsp;&nbsp;HTML
+            <span className="html">/</span>&nbsp;&nbsp;{heading}
           </header>
           <CloseFullscreenIcon />
         </div>
