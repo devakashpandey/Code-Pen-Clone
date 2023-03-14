@@ -6,6 +6,8 @@ import App from "./App";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
  
-    <App /> // here we remove the strict mode to prevent the double render problem
+    <App />
 
 );
+
+  // here we remove the strict mode to prevent the double render problem
