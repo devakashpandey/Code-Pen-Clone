@@ -21,7 +21,7 @@ const Editor = ({ heading }) => {
           </header>
           <CloseFullscreenIcon />
         </div>
-    // code editor start
+
         <ControlledEditor
           className="controlled-editor"  // default class for extra classname
           options={{
@@ -29,7 +29,7 @@ const Editor = ({ heading }) => {
             lineNumbers: "true",  // for showing the numbers
           }}
         />
-// code editor end
+
       </Box>
     </>
   );
