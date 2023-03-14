@@ -19,7 +19,7 @@ const Header = () => {
             width="35px"
             style={{ color: "white", cursor: "pointer", marginLeft: -10 }}
           />
-          <h3 className="logo-title">Untitled</h3>
+          <h3 className="logo-title">Code Pen</h3>
           <ModeEditIcon className="edit" />
         </Toolbar>
       </AppBar>
